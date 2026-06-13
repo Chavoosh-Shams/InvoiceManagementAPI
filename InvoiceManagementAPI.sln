@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37314.3 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InvoiceManagement.Api", "InvoiceManagement.Api\InvoiceManagement.Api.csproj", "{9E9BAE66-E79B-427B-A29E-4830AEEF048E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StoredProcedures", "StoredProcedures", "{DCC17F12-4D4E-445D-A108-6D7AE3BEB756}"
+	ProjectSection(SolutionItems) = preProject
+		Sp_DeleteOrder.sql = Sp_DeleteOrder.sql
+		Sp_InsertOrder.sql = Sp_InsertOrder.sql
+		Sp_UpdateOrder.sql = Sp_UpdateOrder.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E9BAE66-E79B-427B-A29E-4830AEEF048E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E9BAE66-E79B-427B-A29E-4830AEEF048E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E9BAE66-E79B-427B-A29E-4830AEEF048E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E9BAE66-E79B-427B-A29E-4830AEEF048E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCC17F12-4D4E-445D-A108-6D7AE3BEB756} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9E74868-11ED-4228-BA3B-007673C47F35}
+	EndGlobalSection
+EndGlobal
