@@ -1,0 +1,10 @@
+﻿namespace InvoiceManagement.Api.ApplicationServices.Dtos.OrderDetailDtos
+{
+    public class PostOrderDetailDto
+    {
+        public Guid OrderHeaderID { get; set; }
+        public Guid ProductID { get; set; }
+        public decimal UnitPrice { get; set; }
+        public int Quantity { get; set; }
+    }
+}

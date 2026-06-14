@@ -21,11 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\Services\Repositories\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Compile Update="Frameworks\ResponseFrameworks\ResponseMessages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
