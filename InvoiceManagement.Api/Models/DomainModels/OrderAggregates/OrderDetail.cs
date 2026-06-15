@@ -1,8 +1,7 @@
 ﻿using InvoiceManagement.Api.Models.Frameworks;
 using InvoiceManagement.Api.Models.DomainModels.ProductAggregates;
-using InvoiceManagement.Api.Models.DomainModels.OrderHeaderAggregates;
 
-namespace InvoiceManagement.Api.Models.DomainModels.OrderDetailAggregates
+namespace InvoiceManagement.Api.Models.DomainModels.OrderAggregates
 {
     public class OrderDetail : IDbSetEntity
     {

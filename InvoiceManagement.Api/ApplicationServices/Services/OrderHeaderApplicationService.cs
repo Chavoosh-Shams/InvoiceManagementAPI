@@ -1,12 +1,11 @@
 ﻿using System.Net;
 using InvoiceManagement.Api.Models.Services.Contracts;
 using InvoiceManagement.Api.Frameworks.ResponseFrameworks;
+using InvoiceManagement.Api.Models.DomainModels.OrderAggregates;
 using InvoiceManagement.Api.ApplicationServices.Services.Contracts;
 using InvoiceManagement.Api.Frameworks.ResponseFrameworks.Contracts;
 using InvoiceManagement.Api.ApplicationServices.Dtos.OrderDetailDtos;
 using InvoiceManagement.Api.ApplicationServices.Dtos.OrderHeaderDtos;
-using InvoiceManagement.Api.Models.DomainModels.OrderDetailAggregates;
-using InvoiceManagement.Api.Models.DomainModels.OrderHeaderAggregates;
 
 namespace InvoiceManagement.Api.ApplicationServices.Services
 {
