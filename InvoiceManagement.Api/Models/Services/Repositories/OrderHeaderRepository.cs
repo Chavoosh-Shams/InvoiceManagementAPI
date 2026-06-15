@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 using InvoiceManagement.Api.Models.Services.Contracts;
 using InvoiceManagement.Api.Frameworks.ResponseFrameworks;
+using InvoiceManagement.Api.Models.DomainModels.OrderAggregates;
 using InvoiceManagement.Api.Frameworks.ResponseFrameworks.Contracts;
-using InvoiceManagement.Api.Models.DomainModels.OrderHeaderAggregates;
 
 namespace InvoiceManagement.Api.Models.Services.Repositories
 {

@@ -40,14 +40,16 @@ BEGIN
             OrderHeaderID,
             ProductID,
             UnitPrice,
-            Quantity
+            Quantity,
+			IsDeleted
         )
         SELECT
             OrderDetailID,
             @OrderHeaderID,
             ProductID,
             UnitPrice,
-            Quantity
+            Quantity,
+			0
         FROM OPENJSON(@JsonData, '$.OrderDetails')
         WITH (
             OrderDetailID UNIQUEIDENTIFIER '$.OrderDetailID',

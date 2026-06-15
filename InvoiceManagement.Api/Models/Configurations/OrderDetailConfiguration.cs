@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using InvoiceManagement.Api.Models.DomainModels.OrderDetailAggregates;
+using InvoiceManagement.Api.Models.DomainModels.OrderAggregates;
 
 namespace InvoiceManagement.Api.Models.Configurations
 {

@@ -28,14 +28,16 @@ BEGIN
             OrderDate,
             ShipCity,
             ShipAddress,
-            CustomerID
+            CustomerID,
+            IsDeleted
         )
         SELECT
             OrderHeaderID,
             OrderDate,
             ShipCity,
             ShipAddress,
-            CustomerID
+            CustomerID,
+            0
         FROM OPENJSON(@JsonData)
         WITH
         (
@@ -52,14 +54,16 @@ BEGIN
             OrderHeaderID,
             ProductID,
             UnitPrice,
-            Quantity
+            Quantity,
+            IsDeleted
         )
         SELECT
             OrderDetailID,
             @OrderHeaderID,
             ProductID,
             UnitPrice,
-            Quantity
+            Quantity,
+            0
         FROM OPENJSON(@JsonData, '$.OrderDetails')
         WITH
         (

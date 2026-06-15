@@ -6,10 +6,12 @@ namespace InvoiceManagement.Api.Models
 {
     public class ProjectDbContext : DbContext
     {
+        #region [- Ctor -]
         public ProjectDbContext(DbContextOptions<ProjectDbContext> options) : base(options)
         {
 
-        }
+        } 
+        #endregion
 
         #region [- OnModelCreating(ModelBuilder modelBuilder) -]
         protected override void OnModelCreating(ModelBuilder modelBuilder)

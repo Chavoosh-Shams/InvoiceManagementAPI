@@ -1,5 +1,5 @@
 ﻿using InvoiceManagement.Api.Models.Frameworks;
-using InvoiceManagement.Api.Models.DomainModels.OrderHeaderAggregates;
+using InvoiceManagement.Api.Models.DomainModels.OrderAggregates;
 
 namespace InvoiceManagement.Api.Models.DomainModels.CustomerAggregates
 {
