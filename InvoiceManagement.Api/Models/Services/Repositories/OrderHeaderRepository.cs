@@ -46,7 +46,7 @@ namespace InvoiceManagement.Api.Models.Services.Repositories
                     });
                     var jsonParam = new SqlParameter("@JsonData", jsonString);
                     await _context.Database.ExecuteSqlRawAsync(
-                        "EXEC dbo.Sp_InsertOrder @JsonData",
+                        "EXEC dbo.uspInsertOrder @JsonData",
                         jsonParam
                     );
                     return new Response<OrderHeader>(
@@ -92,7 +92,7 @@ namespace InvoiceManagement.Api.Models.Services.Repositories
                     });
                     var jsonParam = new SqlParameter("@JsonData", jsonString);
                     await _context.Database.ExecuteSqlRawAsync(
-                        "EXEC dbo.Sp_UpdateOrder @JsonData",
+                        "EXEC dbo.uspUpdateOrder @JsonData",
                         jsonParam
                     );
                     return new Response<OrderHeader>(
@@ -133,7 +133,7 @@ namespace InvoiceManagement.Api.Models.Services.Repositories
                 {
                     var param = new SqlParameter("@OrderHeaderID", orderHeader.OrderHeaderID);
                     await _context.Database.ExecuteSqlRawAsync(
-                        "EXEC dbo.Sp_DeleteOrder @OrderHeaderID",
+                        "EXEC dbo.uspDeleteOrder @OrderHeaderID",
                         param
                     );
                     return new Response<OrderHeader>(

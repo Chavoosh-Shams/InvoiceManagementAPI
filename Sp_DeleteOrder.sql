@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE dbo.Sp_DeleteOrder
+CREATE OR ALTER PROCEDURE dbo.uspDeleteOrder
 (
     @OrderHeaderID UNIQUEIDENTIFIER
 )

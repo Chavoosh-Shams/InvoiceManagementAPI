@@ -1,4 +1,4 @@
-CREATE OR ALTER PROCEDURE dbo.Sp_UpdateOrder
+CREATE OR ALTER PROCEDURE dbo.uspUpdateOrder
 (
     @JsonData NVARCHAR(MAX)
 )
